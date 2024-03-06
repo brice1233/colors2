@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="content">
+    <h1>choose your avatar</h1>
+<img src.="https://upload.wikimedia.org/wikipedia/en/1/1e/IchigoKurosakiBleach.jpg">
+    <div class="row">
+        <button id="1">ichigo</button>
+        <button id="2">chad</button>
+        <button id="3">rengi</button>
+        <button id="4">byakuya</button>
+        <button id="5">kisuke</button>
+        <button id="6">toshiro</button>
+       </div>
+    <button id="clear">clear</button>
+    </div>
+</div>
+<script>
+const content = document.querySelector('.content');
+const ichigo = document.getElementById('1');
+const chad = document.getElementById('2');
+const rengi = document.getElementById('3');
+const byakuya = document.getElementById('4');
+const  kisuke = document.getElementById('5');
+const  toshiro = document.getElementById('6');
+const  image = document.querySelector('img');
+const  clearButton = document.getElementById('clear');
+
+ichigo.addEventListener('click', function(e){
+    image.src= 'https://static.wikia.nocookie.net/transcendencefanon/images/e/ed/Ichigo_Kurosaki.jpg/revision/latest?cb=20130723133722'
+});
+chad.addEventListener('click',function(e){
+    image.src='https://preview.redd.it/the-ending-that-chad-deserved-the-final-chad-rewrite-v0-94lf9h0odeha1.png?width=975&format=png&auto=webp&s=752f502aed728292f714b8835ac5660cd18ed119'
+});
+rengi.addEventListener('click', function(e){
+    image.src='https://static.wikia.nocookie.net/p__/images/b/b8/Bleach_TYBW_Renji_Anime_Render.png/revision/latest?cb=20221212185324&path-prefix=protagonist'
+});
+byakuya.addEventListener('click',function(e){
+    image.src='https://static.wikia.nocookie.net/p__/images/6/64/Kindpng_6243994.png/revision/latest/scale-to-width/360?cb=20200805074628&path-prefix=protagonist'
+});
+kisuke.addEventListener('click',function (e){
+    image.src='https://static.wikia.nocookie.net/the-lounges-battles/images/4/4e/KisukeUrahara1.png/revision/latest?cb=20221203230743'
+});
+toshiro.addEventListener('click', function(e){
+    image.src='https://static.wikia.nocookie.net/bleachthekingoffighters/images/0/08/Hitsugaya_BKOFA15.png/revision/latest?cb=20210613111021'
+});
+</script>
+</body>
+</html>
